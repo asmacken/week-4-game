@@ -64,7 +64,8 @@ h2 {
 p {
   font-size: 22px;
   color: white;
-  /* line-height: 5%; */
+  padding-bottom: 3%;
+  padding-top: 2%;
 }
 
 #instructions {
