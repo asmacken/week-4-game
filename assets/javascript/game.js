@@ -2,7 +2,9 @@ var wins = 0;
 var losses = 0;
 var runningCount = 0;
 
-var picked = Math.floor((Math.random() * 100) + 19);
+
+creates a variable called picked and then randomly generates a number between 1
+var picked = Math.floor((Math.random() * 120) + 19);
 console.log(picked);
 
 var diamond = Math.floor((Math.random() * 12) + 1);
@@ -25,7 +27,7 @@ var score = function() {
 
 var reset = function() {
   runningCount = 0;
-  picked = Math.floor((Math.random() * 100) + 19);
+  picked = Math.floor((Math.random() * 120) + 19);
 
   $('#randomnumber').empty();
   $('#randomnumber').append(picked);
