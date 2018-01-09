@@ -3,10 +3,12 @@ var losses = 0;
 var runningCount = 0;
 
 
-creates a variable called picked and then randomly generates a number between 1
+// creates a variable called picked and then randomly generates a number between 19 - 120
 var picked = Math.floor((Math.random() * 120) + 19);
 console.log(picked);
 
+
+// creates variables called for each crystal and then randomly generates a number between 1 - 12
 var diamond = Math.floor((Math.random() * 12) + 1);
 console.log(diamond);
 var green = Math.floor((Math.random() * 12) + 1);
@@ -23,6 +25,7 @@ var score = function() {
   $('#losses').append(losses);
   $('#runningcount').empty();
   $('#runningcount').append(runningCount);
+  $('#runningcount').text(runningCount);
 }
 
 var reset = function() {
@@ -57,6 +60,7 @@ var config = function() {
 }
 
 $('#runningcount').append(runningCount);
+// $('#runningcount').text(runningCount);
 $('#randomnumber').append(picked);
 
 $(document).ready(function() {
